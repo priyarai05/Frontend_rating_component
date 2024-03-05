@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Overpass';
+}
+
+.container {
+    background-image: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
+    width: 400px;
+    padding: 2rem;
+    border-radius: 1.5em;
+}
+
+#star {
+    background-color: var(--Dark-Blue);
+    box-shadow: 5px 5px .4em var(--Pale-blue);
+    padding: 0.65rem;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: var(--White);
+    margin: 0.5rem 0;
+    font-size: 1.9em;
+}
+
+p {
+    color: var(--Light-Grey);
+    line-height: 1.6;
+    /* word-spacing: 0.01mm; */
+    font-size: 1em;
+}
+
+.rates {
+    margin: 1rem 0;
+}
+
+.rates ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rates li {
+    list-style: none;
+    color: var(--Light-Grey);
+    background-color: var(--Dark-Blue);
+    width: 20%;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ratesonhover {
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+/* .rates li:hover:nth-child(n-2) {
+    color: var(--White);
+    background-color: var(--Medium-Grey);
+} */
+
+#submit {
+    width: 100%;
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 1.5em;
+    font-size: 1em;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+#rating {
+    background-color: var(--Dark-Blue);
+    color: var(--Orange);
+    border-radius: 1rem;
+    margin: 2em 0;
+    padding: 0.5rem 1.5em;
+}
+
+.tgl {
+    display: none;
+}
