@@ -80,15 +80,15 @@ p {
     cursor: pointer;
 }
 
-.ratesonhover {
-    color: var(--White);
-    background-color: var(--Orange);
-}
-
-/* .rates li:hover:nth-child(n-2) {
+.rates li:hover {
     color: var(--White);
     background-color: var(--Medium-Grey);
-} */
+}
+
+.selected {
+    color: var(--White) !important;
+    background-color: var(--Orange) !important;
+}
 
 #submit {
     width: 100%;
