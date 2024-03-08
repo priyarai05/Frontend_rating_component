@@ -11,7 +11,6 @@ rate.forEach(element => {
         select = true
 
         const currentlySelectedEle = document.querySelector('.selected')
-        console.log(currentlySelectedEle)
         if (currentlySelectedEle) {
             currentlySelectedEle.classList.remove('selected')
         }
